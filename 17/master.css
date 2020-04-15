@@ -1,0 +1,37 @@
+body {
+  background: url("https://source.unsplash.com/nDqA4d5NL0k/2000x2000");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.bands {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  background: white;
+  list-style-type: none;
+  padding: 0;
+  box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.08);
+}
+
+.bands li {
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-left: 20px;
+}
+
+li:before {
+    content:"";
+    border-style: solid;
+    background-color: black;
+    width: 1px;
+    height: 1px;
+    margin-right:1em;
+    margin-bottom: 0.15em;
+    position: relative;
+    display: inline-block;
+}

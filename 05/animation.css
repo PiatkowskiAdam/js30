@@ -1,0 +1,22 @@
+.span-movement-down {
+  animation-name: text-movement-down;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  margin-top: 0;
+}
+
+.span-movement-up {
+  animation-name: text-movement-up;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  margin-bottom: 0;
+}
+
+
+@keyframes text-movement-down {
+  from {margin-top: -400px} to {margin-top: 0px};
+}
+
+@keyframes text-movement-up {
+  from {margin-bottom: -400px} to {margin-bottom: 0px};
+}

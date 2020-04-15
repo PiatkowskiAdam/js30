@@ -1,0 +1,75 @@
+body {
+  background: #ffc600;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.finder {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  border: 12px solid #f7f7f7;
+  box-shadow: 0 0 4px 0px #555;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 36px;
+  color: #7a7a7a;
+  outline: none;
+}
+
+.city-list {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.additional-info {
+  width: 80%;
+  height: 50px;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 10px;
+  justify-content: space-between;
+}
+
+.additional-info-odd {
+  transform: perspective(50px) rotateX(-3deg) ;
+  box-shadow: 0 2px 2px 1px #555;
+}
+
+.additional-info-even {
+  transform: perspective(50px) rotateX(3deg) translateY(-2px);
+  box-shadow: 0 2px 2px 1px #555;
+}
+
+.additional-info p {
+  margin-left: 25px;
+  font-size: 20px;
+  line-height: 50px;
+  margin-top: 0;
+}
+
+
+.left-align {
+  display: block;
+  font-size: 22px;
+}
+
+.right-align {
+  display: block;
+  text-align: right;
+}

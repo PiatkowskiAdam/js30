@@ -1,0 +1,92 @@
+html {
+  background-color: #ffc600;
+}
+
+.sheet {
+  position: relative;
+  background-color: white;
+  width: 45vw;
+  max-width: 800px;
+  min-width: 450px;
+  height: 80vh;
+  margin: 25px auto;
+  box-shadow: 3px -3px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.sheet::before {
+  content: '';
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  background-color: rgba(255,0,0,0.6);
+}
+
+.pattern {
+  height: 100%;
+  background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
+}
+
+.content {
+  padding-top: 6px;
+  padding-left: 56px;
+  padding-right: 16px;
+  line-height: 19px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 19px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+.buttons {
+
+  width: 600px;
+  padding-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.flag {
+  height: 35px;
+  width: auto;
+  border: 2px solid black;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 8px #ffc600;
+  transition: all 0.75s;
+  cursor: pointer
+}
+
+.flag:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.selected {
+  box-shadow: 0 0 3px 8px #3E4960;
+}
+
+button {
+  width: 125px;
+  height: 50px;
+  background-color: #134074;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: bold;
+  outline: none;
+}
+
+button:hover {
+  background-color: #93A8BF;
+  color: black;
+  border: 1px solid #134074;
+}

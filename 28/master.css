@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://source.unsplash.com/random/900x1600");
+  background-size: cover;
+  background-position: center;
+}
+
+.grayfilter {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: grayscale(100%);
+}
+
+video {
+  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.1)
+}
+
+.video-controller {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rate-controller {
+  height: 360px;
+  background: #FBFBFB;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.6);
+  margin-left: 20px;
+  width: 70px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.filled-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: sans-serif;
+  width: 100%;
+  height: 25%;
+  background: linear-gradient(#810C9E, #00659B);
+}
+
+
+
+/*
+https://cssgradient.io/
+#810C9E 12.5%,
+#00659B 25%,
+*/

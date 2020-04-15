@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 2;
+  font-size: 20px;
+  background:
+    linear-gradient(45deg, hsla(340, 100%, 55%, 1) 0%, hsla(340, 100%, 55%, 0) 70%),
+    linear-gradient(135deg, hsla(225, 95%, 50%, 1) 10%, hsla(225, 95%, 50%, 0) 80%),
+    linear-gradient(225deg, hsla(140, 90%, 50%, 1) 10%, hsla(140, 90%, 50%, 0) 80%),
+    linear-gradient(315deg, hsla(35, 95%, 55%, 1) 100%, hsla(35, 95%, 55%, 0) 70%);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  font-size: 0.85rem;
+  margin: 70px auto 30px;
+  text-align: left;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  background: rgba(265, 265, 265, 0.1);
+  padding: 3px;
+  border-radius: 15px;
+}
+
+main {
+  width: 450px;
+  margin: 20px auto;
+}
+
+#highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0.5;
+  border-radius: 15px;
+  transition: all 1s;
+}

@@ -1,0 +1,61 @@
+html {
+  background-color: #ffc600;
+}
+
+.camera {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 90vw;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+}
+
+button {
+  z-index: 1;
+  position: absolute;
+}
+
+#video-element {
+  height: 60vh;
+  width: auto;
+  margin: 20px 0;
+  padding: 0;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#canvas {
+  display: none;
+  height: auto;
+}
+
+.polaroid {
+  display: inline-block;
+  width: 70px;
+  height: auto;
+  margin: 15px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  border: 1px solid lightgrey;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.polaroid img {
+  position: relative;
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  filter: brightness(0%);
+  animation-duration: 13s;
+  animation-name: rendering;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rendering {
+  from { filter: brightness(0%) }
+  to { filter: brightness(100%) }
+}

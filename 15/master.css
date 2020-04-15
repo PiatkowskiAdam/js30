@@ -1,0 +1,81 @@
+body {
+  background-image: url("tapas_bar.jpg");
+  background-size: cover;
+  background-position: center;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background: rgba(256, 256, 256, 0.85);
+  box-shadow: 0 0 0 12px rgba(0, 0, 0, 0.2);
+  width: 270px;
+  margin: 30vh auto;
+  text-align: center;
+  padding: 20px 40px;
+}
+
+
+ul {
+  list-style-type: none;
+  border-bottom: 1px solid grey;
+  padding-bottom: 15px;
+  padding-left: 0;
+  text-align: left;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+.mini-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+input[type=text] {
+  height: 35px;
+  width: 64%;
+  background-color: #f0f0f0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+  padding-left: 10px;
+}
+
+li {
+  margin: 10px 0;
+}
+
+
+
+input[type=text]:focus {
+  background-color: #fff;
+  transition: all 0.5s;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+button {
+  width: 30%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.75s;
+  outline: none;
+}
+
+button:hover {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+input[type=checkbox] {
+  pointer-events: none;
+}

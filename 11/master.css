@@ -1,0 +1,149 @@
+body {
+  background-color: #7A419B;
+}
+
+
+.whole-thing {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-with-controls {
+  position: relative;
+  display: block;
+  max-height: 358px;
+  max-width: 640px;
+  padding: 0;
+  border: 5px solid rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  transform: translate(0, -7px);
+  transition: all 1s;
+}
+
+.video-with-controls:hover .controls {
+  transform: translate(0, -50px);
+  transition: all 1s;
+}
+
+
+
+.line1 {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+progress {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  cursor: ew-resize;
+}
+
+progress::-webkit-progress-bar {
+  background-color: rgba(200, 200, 200, 0.1);
+}
+
+progress::-webkit-progress-value {
+  background-color: yellow
+}
+
+progress::-moz-progress-bar {
+  background-color: rgba(200, 200, 200, 0.1);
+}
+
+
+.line2 {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  height: 330px;
+  display: flex;
+  white-space: nowrap;
+  top: 17px;
+}
+
+.control {
+  background: transparent;
+  border: none;
+  outline: none;
+  height: 30px;
+  color: white;
+  wrap: nowrap;
+  cursor: pointer;
+}
+
+svg {
+  fill: white;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  padding-bottom: 13px;
+  cursor: pointer;
+  margin: 0px 15px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 18px;
+  width: 18px;
+  background-color: yellow;
+  border-radius: 50%;
+  margin-top: -3px;
+}
+
+input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 12px;
+  cursor: pointer;
+  background-color: #c0c1c2;
+  margin-top: -5px;
+  border-radius: 1.8px;
+}
+
+input[type=range]::-moz-range-track {
+  height: 12px;
+  cursor: pointer;
+  background-color: #c0c1c2;
+  border-radius: 1.8px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  outline: none;
+  background-color: #bada55;
+}
+
+.revert {
+  transform: rotate(180deg);
+}
+
+#id1::after {
+  content: " 10s";
+  line-height: 12px;
+  vertical-align: top;
+  font-size: 12px;
+}
+
+#id2::before {
+  content: "25s ";
+  line-height: 12px;
+  vertical-align: top;
+  font-size: 12px;
+}

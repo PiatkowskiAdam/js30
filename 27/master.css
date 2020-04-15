@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  background-color: #9EC5AB;
+}
+
+
+.installation {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  width: 100vw;
+  display: inline-flex;
+  overflow-x: scroll;
+  transform: scale(0.97);
+  transition: transform 0.3s;
+  cursor: grab;
+  border: 2px solid #011502;
+}
+
+h1::selection {
+  background: inherit;
+}
+
+.block {
+  min-width: 150px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 2rem;
+  box-shadow: inset 0 0 0 8px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+.block:nth-child(odd) {
+  background-color: #394648;
+}
+
+.block:nth-child(even) {
+  background-color: #69995D;
+}

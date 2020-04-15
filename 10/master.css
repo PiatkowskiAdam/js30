@@ -1,0 +1,41 @@
+body {
+  background: #ffc600;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.paper {
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  margin: 50px auto;
+  border-radius: 5px;
+  box-shadow: 7px 7px rgba(2, 2, 2, 0.2);
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #D1E2FF;
+}
+
+.list {
+  padding: 20px 15px;
+}
+
+.list-input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-explanation {
+  border-left: 1px solid #D1E2FF;
+}
+
+.checked .list-explanation {
+  text-decoration: line-through;
+  background-color: #E5EFFF;
+}
